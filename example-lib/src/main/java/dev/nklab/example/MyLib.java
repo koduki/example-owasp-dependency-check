@@ -2,9 +2,9 @@ package dev.nklab.example;
 
 import org.apache.logging.log4j.LogManager;
 
-public class App {
-    public static void main(String[] args) {
+public class MyLib {
+    public static void log(String msg) {
         var logger = LogManager.getLogger();
-        logger.error("Hello Log4j2");
+        logger.error(msg);
     }
 }
