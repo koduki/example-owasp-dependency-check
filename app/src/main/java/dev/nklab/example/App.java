@@ -1,12 +1,10 @@
 package dev.nklab.example;
 
-/**
- * Hello world!
- *
- */
+import org.apache.logging.log4j.LogManager;
+
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
-        
+        var logger = LogManager.getLogger();
+        logger.error("Hello Log4j2");
     }
 }
